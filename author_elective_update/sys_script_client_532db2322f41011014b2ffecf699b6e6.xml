@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>caller_id</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Get Email Incident</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    //Type appropriate comment here, and begin script below
+    var usr = g_form.getReference('caller_id', fncall);
+}
+	
+function fncall (usr) {
+	var email = usr.getValue('email');
+	g_form.setValue('u_email_id', email);
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-18 15:41:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>532db2322f41011014b2ffecf699b6e6</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Get Email Incident</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_532db2322f41011014b2ffecf699b6e6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-18 16:15:12</sys_updated_on>
+        <table>incident</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>6e1a075cdbb2c0908aea21c405961916</instance_id>
+        <instance_name>dev98981</instance_name>
+        <name>sys_script_client_532db2322f41011014b2ffecf699b6e6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;caller_id&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Get Email Incident&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    //Type appropriate comment here, and begin script below
+    var usr = g_form.getReference('caller_id', fncall);
+}
+	
+function fncall (usr) {
+	var email = usr.getValue('email');
+	g_form.setValue('u_email_id', email);
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-01-18 15:41:14&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;532db2322f41011014b2ffecf699b6e6&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;Get Email Incident&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_532db2322f41011014b2ffecf699b6e6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-01-18 16:15:12&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-74690342</payload_hash>
+        <record_name>Get Email Incident</record_name>
+        <reverted_from/>
+        <source>49348f292fc1011014b2ffecf699b684</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-18 16:15:12</sys_created_on>
+        <sys_id>a636cbf62f41011014b2ffecf699b6a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e6df88e270000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-18 16:15:12</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>ae36cbf6fd41011016608f8ecc63f3a2</update_guid>
+        <update_guid_history>ae36cbf6fd41011016608f8ecc63f3a2:-74690342,5055cfb645410110c6b1357a2ebf1aef:-414028740,85058bb6aa41011051df8ad1270e1db1:-1974060978,a9a2cb36a9410110ee8873766cfb8fa7:1107322664,51828b363041011081a9c6bc5dff27e9:-1689709827,257187f2f141011006a0d357e93329e1:2061245155,bae00fb21f410110e89eaa48778de761:-141384307,3f108b72154101108aff29a9d14742a7:31912633,45eff6726f4101104603a25d01d57cad:552243207,51ee3a32d5410110a89f719b84659a09:503230816,0d7e3abeb2010110c2b8069cf251bcf1:1640224064</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-18 16:17:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>9fe205a8efdc4ee39373397e31ff2361</sys_id>
+        <sys_metadata>532db2322f41011014b2ffecf699b6e6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Email Incident</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="Incident">0a616603a9663010c0a065f439e661cf</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_client_532db2322f41011014b2ffecf699b6e6</sys_update_name>
+        <sys_update_version display_value="sys_script_client_532db2322f41011014b2ffecf699b6e6">a636cbf62f41011014b2ffecf699b6a3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-18 16:17:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
